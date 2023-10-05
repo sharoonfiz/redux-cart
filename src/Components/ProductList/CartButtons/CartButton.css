@@ -1,0 +1,41 @@
+.after-cart{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    margin: 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.cart-count{
+    margin: 0 20px;
+    color: aqua;
+}
+
+.cart-counter-btn{
+    color: rgb(244, 252, 252);
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #ee247b;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 7px;
+    width: 35px;
+    height: 34px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.add-cart-btn{
+    position: relative;
+    background-color: #f52c8d;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 22px;
+    color: rgb(49, 234, 251);
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    
+}

@@ -1,0 +1,21 @@
+
+header{
+ background-color: rgb(168, 5, 95);
+ padding: 18px;
+
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color: aquamarine;
+}
+
+.logo{
+    font-size: 3rem;
+    color: azure;
+}

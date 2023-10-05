@@ -1,0 +1,85 @@
+
+:root {
+ --transition: all 0.8s ease-in-out ;
+ --bg-circles : rgb(95,199,255);
+}
+
+.card-item h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    text-align: center;
+    position: relative;
+    transition: var(--transition);
+    top: 0;
+}
+
+.card-item:hover h2 ,
+.card-item:active h2 {
+    color: rgb(9, 2, 106);
+    font-weight: normal;
+    font-size: 16px;
+    top: -35px;
+}
+
+section{
+    display: flex;
+    column-gap: 25px;
+    height: 100vh;
+    width: 100%;
+ 
+}
+
+
+.card-item{
+    max-width: 890px;
+    margin-top: 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    background-color: rgb(3, 0, 91);
+    margin-left: 20px;
+    padding: 17px 10px;
+    position: relative;
+    overflow: hidden;
+
+  
+}
+
+.card-item img{
+    width: 280px;
+    height: 210px;
+    /* margin: auto 0 ; */
+    object-fit: contain;
+    transition: all 0.7s ease-in-out;
+    transform: translateY(-15px);
+    margin-top: 40px ;
+
+}
+
+.card-item:active img,
+.card-item:hover img {
+    transform: translateY(-22px) scale(0.9) ;
+}
+
+.card-item::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 32%;
+    left :50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-circles);
+    border-radius: 50%;
+    transition: all 0.7s ease-in-out;
+
+}
+
+.card-item:active::before,
+.card-item:hover::before{
+    width: 270px;
+    height: 270px;
+}
